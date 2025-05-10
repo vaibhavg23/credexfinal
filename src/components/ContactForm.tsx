@@ -26,21 +26,21 @@ export default function ContactForm() {
       <div className="max-w-xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
         <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-6 rounded shadow space-y-4">
-          <input name="name" required placeholder="Name" onChange={handleChange} className="w-full p-3 border rounded" />
-          <input type="email" name="email" required placeholder="Email" onChange={handleChange} className="w-full p-3 border rounded" />
-          <input name="company" placeholder="Company" onChange={handleChange} className="w-full p-3 border rounded" />
+          <input name="name" required placeholder="Name" onChange={handleChange} className="w-full p-3 border rounded text-gray-100" />
+          <input type="email" name="email" required placeholder="Email" onChange={handleChange} className="w-full p-3 border rounded text-gray-100" />
+          <input name="company" placeholder="Company" onChange={handleChange} className="w-full p-3 border rounded text-gray-100" />
           <select 
             name="license" 
             required 
             onChange={handleChange} 
-            className="w-full p-3 border rounded"
+            className="w-full p-3 border rounded text-gray-100"
           >
-            <option value="" className="text-gray-900 dark:text-white">Select License Type</option>
-            <option value="antivirus" className="text-gray-900 dark:text-white">Antivirus</option>
-            <option value="design" className="text-gray-900 dark:text-white">Design Software</option>
-            <option value="office" className="text-gray-900 dark:text-white">Office Suite</option>
+            <option value="" className="text-gray-100 dark:text-white">Select License Type</option>
+            <option value="antivirus" className="text-gray-100 dark:text-white">Antivirus</option>
+            <option value="design" className="text-gray-100 dark:text-white">Design Software</option>
+            <option value="office" className="text-gray-100 dark:text-white">Office Suite</option>
           </select>
-          <textarea name="message" required placeholder="Message" onChange={handleChange} className="w-full p-3 border rounded" />
+          <textarea name="message" required placeholder="Message" onChange={handleChange} className="w-full p-3 border rounded text-gray-100" />
           <button type="submit" className="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700">Submit</button>
         </form>
       </div>
