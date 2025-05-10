@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+@layer base {
+  /* Light mode */
+  html {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  /* Dark mode */
+  html.dark {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+}
+
+@layer utilities {
+  .bg-theme-primary {
+    background-color: var(--bg-primary);
+  }
+  
+  .bg-theme-secondary {
+    background-color: var(--bg-secondary);
+  }
+  
+  .text-theme-primary {
+    color: var(--text-primary);
+  }
+  
+  .text-theme-secondary {
+    color: var(--text-secondary);
+  }
+  
+  .border-theme {
+    border-color: var(--border-color);
+  }
+}
