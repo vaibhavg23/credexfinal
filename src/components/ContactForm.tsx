@@ -29,11 +29,16 @@ export default function ContactForm() {
           <input name="name" required placeholder="Name" onChange={handleChange} className="w-full p-3 border rounded" />
           <input type="email" name="email" required placeholder="Email" onChange={handleChange} className="w-full p-3 border rounded" />
           <input name="company" placeholder="Company" onChange={handleChange} className="w-full p-3 border rounded" />
-          <select name="license" required onChange={handleChange} className="w-full p-3 border rounded">
-            <option value="">Select License Type</option>
-            <option value="antivirus">Antivirus</option>
-            <option value="design">Design Software</option>
-            <option value="office">Office Suite</option>
+          <select 
+            name="license" 
+            required 
+            onChange={handleChange} 
+            className="w-full p-3 border rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800"
+          >
+            <option value="" className="text-gray-900 dark:text-white">Select License Type</option>
+            <option value="antivirus" className="text-gray-900 dark:text-white">Antivirus</option>
+            <option value="design" className="text-gray-900 dark:text-white">Design Software</option>
+            <option value="office" className="text-gray-900 dark:text-white">Office Suite</option>
           </select>
           <textarea name="message" required placeholder="Message" onChange={handleChange} className="w-full p-3 border rounded" />
           <button type="submit" className="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700">Submit</button>
