@@ -33,7 +33,7 @@ export default function ContactForm() {
             name="license" 
             required 
             onChange={handleChange} 
-            className="w-full p-3 border rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800"
+            className="w-full p-3 border rounded"
           >
             <option value="" className="text-gray-900 dark:text-white">Select License Type</option>
             <option value="antivirus" className="text-gray-900 dark:text-white">Antivirus</option>
